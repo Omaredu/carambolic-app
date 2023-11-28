@@ -1,0 +1,29 @@
+{
+  "schemaNamespace" : "CarambolicSchema",
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "**/*.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./CarambolicSchema",
+      "moduleType" : {
+        "embeddedInTarget" : {
+          "name" : "carambolic"
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

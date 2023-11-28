@@ -14,6 +14,12 @@ struct BookmarkView: View {
     @State private var selectedIndex: Int?
     @State private var rotation: Double = 20
     let bookmark: Bookmark
+    let onStoryCreate: () -> Void
+    
+    init(bookmark: Bookmark, onStoryCreate: @escaping () -> Void = {}) {
+        self.bookmark = bookmark
+        self.onStoryCreate = onStoryCreate
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -55,7 +61,7 @@ struct BookmarkView: View {
                     .background(.blue)
                     .cornerRadius(10)
                     
-                    Button(action: {}, label: {
+                    Button(action: { onStoryCreate() }, label: {
                         Label("Convertir en historia", systemImage: "point.bottomleft.forward.to.point.topright.scurvepath")
                             .fontWeight(.medium)
                             .padding()
@@ -74,30 +80,41 @@ struct BookmarkView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    VStack(alignment: .leading) {
-                        Text("Resumen".uppercased())
-                            .font(.caption)
-                            .foregroundStyle(.gray)
-                        Text(bookmark.summary)
-                            .padding()
-                            .background(.thickMaterial)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                    }
-                    .padding(.bottom)
-                    VStack(alignment: .leading) {
-                        Text("Fact checking".uppercased())
-                            .font(.caption)
-                            .foregroundStyle(.gray)
-                        HStack(alignment: .top) {
-                            BookmarkCheckView(bookmark.check)
-                                .frame(width: 15)
-                                .padding(3)
-                            Text(bookmark.check ? "Parece que el contenido de este bookmark, es verídico" : "Es probable que el contenido de este bookmark sea falso")
-                                .foregroundStyle(bookmark.check ? .blue : .red)
-                                .frame(width: .infinity)
+                    ScrollView {
+                        Rectangle()
+                            .fill(.clear)
+                            .frame(height: 80)
+                        VStack(alignment: .leading) {
+                            Text("Resumen".uppercased())
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                            Text(bookmark.summary)
+                                .padding()
+                                .background(.thickMaterial)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
+                        .scrollTransition(.animated) { element, phase in
+                            element.opacity(phase.isIdentity ? 1 : 0)
+                        }
+                        .padding(.bottom)
+                        VStack(alignment: .leading) {
+                            Text("Fact checking".uppercased())
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                            HStack(alignment: .top) {
+                                BookmarkCheckView(bookmark.check)
+                                    .frame(width: 15)
+                                    .padding(3)
+                                Text(bookmark.check ? "Parece que el contenido de este bookmark, es verídico" : "Es probable que el contenido de este bookmark sea falso")
+                                    .foregroundStyle(bookmark.check ? .blue : .red)
+                                    .frame(width: .infinity)
+                            }
+                        }
+                        .padding(.bottom)
+                        .scrollTransition(.animated) { element, phase in
+                            element.opacity(phase.isIdentity ? 1 : 0)
                         }
                     }
-                    .padding(.bottom)
                 }
                 .padding()
                 .frame(width: geometry.size.width, height: geometry.size.height)

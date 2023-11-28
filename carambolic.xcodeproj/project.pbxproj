@@ -12,6 +12,7 @@
 		4429AEB32AE74D4F00CA6286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4429AEB22AE74D4F00CA6286 /* Assets.xcassets */; };
 		4429AEB62AE74D4F00CA6286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4429AEB52AE74D4F00CA6286 /* Preview Assets.xcassets */; };
 		445382872B1561310070ECB8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445382862B1561300070ECB8 /* LoginView.swift */; };
+		4453828A2B1571480070ECB8 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 445382892B1571480070ECB8 /* Apollo */; };
 		445E794A2B12E8A0009FEFFE /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E79492B12E8A0009FEFFE /* StoryView.swift */; };
 		445E794C2B12E91F009FEFFE /* StoryActView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E794B2B12E91E009FEFFE /* StoryActView.swift */; };
 		445E794E2B12EA09009FEFFE /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E794D2B12EA09009FEFFE /* Story.swift */; };
@@ -27,6 +28,24 @@
 		44B511932B142640003D74AA /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B511922B142640003D74AA /* BookmarkView.swift */; };
 		44B511952B14288D003D74AA /* BookmarkThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B511942B14288D003D74AA /* BookmarkThumbnailView.swift */; };
 		44B511972B144A41003D74AA /* BookmarkCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B511962B144A41003D74AA /* BookmarkCheckView.swift */; };
+		44DB21962B157C6600BE6108 /* StoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21952B157C6600BE6108 /* StoriesService.swift */; };
+		44DB21982B15800B00BE6108 /* BookmarksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21972B15800B00BE6108 /* BookmarksService.swift */; };
+		44DB21B02B15838600BE6108 /* CarambolicSchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB219A2B15838600BE6108 /* CarambolicSchema.graphql.swift */; };
+		44DB21B12B15838600BE6108 /* StoryCreateMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB219D2B15838600BE6108 /* StoryCreateMutation.graphql.swift */; };
+		44DB21B22B15838600BE6108 /* GetAllStoriesQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB219F2B15838600BE6108 /* GetAllStoriesQuery.graphql.swift */; };
+		44DB21B32B15838600BE6108 /* GetAllBookmarksQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A02B15838600BE6108 /* GetAllBookmarksQuery.graphql.swift */; };
+		44DB21B42B15838600BE6108 /* ISO8601DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A32B15838600BE6108 /* ISO8601DateTime.swift */; };
+		44DB21B52B15838600BE6108 /* Act.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A52B15838600BE6108 /* Act.graphql.swift */; };
+		44DB21B62B15838600BE6108 /* Story.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A62B15838600BE6108 /* Story.graphql.swift */; };
+		44DB21B72B15838600BE6108 /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A72B15838600BE6108 /* Mutation.graphql.swift */; };
+		44DB21B82B15838600BE6108 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A82B15838600BE6108 /* Query.graphql.swift */; };
+		44DB21B92B15838600BE6108 /* StoryCreatePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21A92B15838600BE6108 /* StoryCreatePayload.graphql.swift */; };
+		44DB21BA2B15838600BE6108 /* Bookmark.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21AA2B15838600BE6108 /* Bookmark.graphql.swift */; };
+		44DB21BB2B15838600BE6108 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21AB2B15838600BE6108 /* SchemaConfiguration.swift */; };
+		44DB21BC2B15838600BE6108 /* StoryInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21AD2B15838600BE6108 /* StoryInput.graphql.swift */; };
+		44DB21BD2B15838600BE6108 /* StoryCreateInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21AE2B15838600BE6108 /* StoryCreateInput.graphql.swift */; };
+		44DB21BE2B15838600BE6108 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21AF2B15838600BE6108 /* SchemaMetadata.graphql.swift */; };
+		44DB21C02B1584E100BE6108 /* CarambolicClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB21BF2B1584E100BE6108 /* CarambolicClient.swift */; };
 		44F31BE92B0EDCBD004519AB /* BookmarkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F31BE82B0EDCBD004519AB /* BookmarkItemView.swift */; };
 		44F31BEB2B0EDDAD004519AB /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F31BEA2B0EDDAD004519AB /* Bookmark.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +72,24 @@
 		44B511922B142640003D74AA /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
 		44B511942B14288D003D74AA /* BookmarkThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkThumbnailView.swift; sourceTree = "<group>"; };
 		44B511962B144A41003D74AA /* BookmarkCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCheckView.swift; sourceTree = "<group>"; };
+		44DB21952B157C6600BE6108 /* StoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesService.swift; sourceTree = "<group>"; };
+		44DB21972B15800B00BE6108 /* BookmarksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksService.swift; sourceTree = "<group>"; };
+		44DB219A2B15838600BE6108 /* CarambolicSchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarambolicSchema.graphql.swift; sourceTree = "<group>"; };
+		44DB219D2B15838600BE6108 /* StoryCreateMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCreateMutation.graphql.swift; sourceTree = "<group>"; };
+		44DB219F2B15838600BE6108 /* GetAllStoriesQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllStoriesQuery.graphql.swift; sourceTree = "<group>"; };
+		44DB21A02B15838600BE6108 /* GetAllBookmarksQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllBookmarksQuery.graphql.swift; sourceTree = "<group>"; };
+		44DB21A32B15838600BE6108 /* ISO8601DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTime.swift; sourceTree = "<group>"; };
+		44DB21A52B15838600BE6108 /* Act.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.graphql.swift; sourceTree = "<group>"; };
+		44DB21A62B15838600BE6108 /* Story.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.graphql.swift; sourceTree = "<group>"; };
+		44DB21A72B15838600BE6108 /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
+		44DB21A82B15838600BE6108 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		44DB21A92B15838600BE6108 /* StoryCreatePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCreatePayload.graphql.swift; sourceTree = "<group>"; };
+		44DB21AA2B15838600BE6108 /* Bookmark.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookmark.graphql.swift; sourceTree = "<group>"; };
+		44DB21AB2B15838600BE6108 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		44DB21AD2B15838600BE6108 /* StoryInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryInput.graphql.swift; sourceTree = "<group>"; };
+		44DB21AE2B15838600BE6108 /* StoryCreateInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCreateInput.graphql.swift; sourceTree = "<group>"; };
+		44DB21AF2B15838600BE6108 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		44DB21BF2B1584E100BE6108 /* CarambolicClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarambolicClient.swift; sourceTree = "<group>"; };
 		44F31BE82B0EDCBD004519AB /* BookmarkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkItemView.swift; sourceTree = "<group>"; };
 		44F31BEA2B0EDDAD004519AB /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4453828A2B1571480070ECB8 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +125,9 @@
 		4429AEAD2AE74D4C00CA6286 /* carambolic */ = {
 			isa = PBXGroup;
 			children = (
+				44DB21992B15838600BE6108 /* CarambolicSchema */,
+				445382962B1573AB0070ECB8 /* GraphQL */,
+				445382952B15718B0070ECB8 /* Services */,
 				44B0F8AD2B0C2DE500AF4B52 /* Models */,
 				44B0F8AC2B0C2DDE00AF4B52 /* Views */,
 				4429AEAE2AE74D4C00CA6286 /* carambolicApp.swift */,
@@ -103,6 +144,23 @@
 				4429AEB52AE74D4F00CA6286 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		445382952B15718B0070ECB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44DB21952B157C6600BE6108 /* StoriesService.swift */,
+				44DB21972B15800B00BE6108 /* BookmarksService.swift */,
+				44DB21BF2B1584E100BE6108 /* CarambolicClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		445382962B1573AB0070ECB8 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 		44B0F8AC2B0C2DDE00AF4B52 /* Views */ = {
@@ -161,6 +219,84 @@
 			path = Bookmarks;
 			sourceTree = "<group>";
 		};
+		44DB21992B15838600BE6108 /* CarambolicSchema */ = {
+			isa = PBXGroup;
+			children = (
+				44DB219A2B15838600BE6108 /* CarambolicSchema.graphql.swift */,
+				44DB219B2B15838600BE6108 /* Operations */,
+				44DB21A12B15838600BE6108 /* Schema */,
+			);
+			path = CarambolicSchema;
+			sourceTree = SOURCE_ROOT;
+		};
+		44DB219B2B15838600BE6108 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				44DB219C2B15838600BE6108 /* Mutations */,
+				44DB219E2B15838600BE6108 /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		44DB219C2B15838600BE6108 /* Mutations */ = {
+			isa = PBXGroup;
+			children = (
+				44DB219D2B15838600BE6108 /* StoryCreateMutation.graphql.swift */,
+			);
+			path = Mutations;
+			sourceTree = "<group>";
+		};
+		44DB219E2B15838600BE6108 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				44DB219F2B15838600BE6108 /* GetAllStoriesQuery.graphql.swift */,
+				44DB21A02B15838600BE6108 /* GetAllBookmarksQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		44DB21A12B15838600BE6108 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				44DB21A22B15838600BE6108 /* CustomScalars */,
+				44DB21A42B15838600BE6108 /* Objects */,
+				44DB21AB2B15838600BE6108 /* SchemaConfiguration.swift */,
+				44DB21AC2B15838600BE6108 /* InputObjects */,
+				44DB21AF2B15838600BE6108 /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		44DB21A22B15838600BE6108 /* CustomScalars */ = {
+			isa = PBXGroup;
+			children = (
+				44DB21A32B15838600BE6108 /* ISO8601DateTime.swift */,
+			);
+			path = CustomScalars;
+			sourceTree = "<group>";
+		};
+		44DB21A42B15838600BE6108 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				44DB21A52B15838600BE6108 /* Act.graphql.swift */,
+				44DB21A62B15838600BE6108 /* Story.graphql.swift */,
+				44DB21A72B15838600BE6108 /* Mutation.graphql.swift */,
+				44DB21A82B15838600BE6108 /* Query.graphql.swift */,
+				44DB21A92B15838600BE6108 /* StoryCreatePayload.graphql.swift */,
+				44DB21AA2B15838600BE6108 /* Bookmark.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		44DB21AC2B15838600BE6108 /* InputObjects */ = {
+			isa = PBXGroup;
+			children = (
+				44DB21AD2B15838600BE6108 /* StoryInput.graphql.swift */,
+				44DB21AE2B15838600BE6108 /* StoryCreateInput.graphql.swift */,
+			);
+			path = InputObjects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +313,9 @@
 			dependencies = (
 			);
 			name = carambolic;
+			packageProductDependencies = (
+				445382892B1571480070ECB8 /* Apollo */,
+			);
 			productName = carambolic;
 			productReference = 4429AEAB2AE74D4C00CA6286 /* carambolic.app */;
 			productType = "com.apple.product-type.application";
@@ -205,6 +344,9 @@
 				Base,
 			);
 			mainGroup = 4429AEA22AE74D4B00CA6286;
+			packageReferences = (
+				445382882B1571480070ECB8 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 4429AEAC2AE74D4C00CA6286 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,25 +374,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				445E794C2B12E91F009FEFFE /* StoryActView.swift in Sources */,
+				44DB21BE2B15838600BE6108 /* SchemaMetadata.graphql.swift in Sources */,
+				44DB21B52B15838600BE6108 /* Act.graphql.swift in Sources */,
 				44F31BE92B0EDCBD004519AB /* BookmarkItemView.swift in Sources */,
 				44B511972B144A41003D74AA /* BookmarkCheckView.swift in Sources */,
 				4429AEB12AE74D4C00CA6286 /* ContentView.swift in Sources */,
+				44DB21B72B15838600BE6108 /* Mutation.graphql.swift in Sources */,
 				44B511952B14288D003D74AA /* BookmarkThumbnailView.swift in Sources */,
+				44DB21BD2B15838600BE6108 /* StoryCreateInput.graphql.swift in Sources */,
+				44DB21B12B15838600BE6108 /* StoryCreateMutation.graphql.swift in Sources */,
 				445E79542B131222009FEFFE /* StoryThumbnailView.swift in Sources */,
 				445E79502B12EA72009FEFFE /* Act.swift in Sources */,
 				44B0F8BE2B0C55B400AF4B52 /* StoryItemView.swift in Sources */,
+				44DB21982B15800B00BE6108 /* BookmarksService.swift in Sources */,
 				445E79522B12F8F2009FEFFE /* ProgressBarView.swift in Sources */,
 				44B0F8B72B0C330C00AF4B52 /* AvatarView.swift in Sources */,
+				44DB21B92B15838600BE6108 /* StoryCreatePayload.graphql.swift in Sources */,
 				44B0F8B42B0C2EF400AF4B52 /* StoriesView.swift in Sources */,
+				44DB21BA2B15838600BE6108 /* Bookmark.graphql.swift in Sources */,
+				44DB21BB2B15838600BE6108 /* SchemaConfiguration.swift in Sources */,
 				445E794E2B12EA09009FEFFE /* Story.swift in Sources */,
 				44B511932B142640003D74AA /* BookmarkView.swift in Sources */,
+				44DB21B62B15838600BE6108 /* Story.graphql.swift in Sources */,
 				445E794A2B12E8A0009FEFFE /* StoryView.swift in Sources */,
 				44F31BEB2B0EDDAD004519AB /* Bookmark.swift in Sources */,
 				4429AEAF2AE74D4C00CA6286 /* carambolicApp.swift in Sources */,
 				44B0F8B12B0C2ED400AF4B52 /* BookmarksView.swift in Sources */,
+				44DB21B02B15838600BE6108 /* CarambolicSchema.graphql.swift in Sources */,
+				44DB21B82B15838600BE6108 /* Query.graphql.swift in Sources */,
 				44B0F8B92B0C46AD00AF4B52 /* ProfileView.swift in Sources */,
 				445382872B1561310070ECB8 /* LoginView.swift in Sources */,
+				44DB21C02B1584E100BE6108 /* CarambolicClient.swift in Sources */,
+				44DB21B32B15838600BE6108 /* GetAllBookmarksQuery.graphql.swift in Sources */,
+				44DB21BC2B15838600BE6108 /* StoryInput.graphql.swift in Sources */,
+				44DB21B22B15838600BE6108 /* GetAllStoriesQuery.graphql.swift in Sources */,
 				44B0F8AF2B0C2E3700AF4B52 /* ExploreView.swift in Sources */,
+				44DB21962B157C6600BE6108 /* StoriesService.swift in Sources */,
+				44DB21B42B15838600BE6108 /* ISO8601DateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		445382882B1571480070ECB8 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		445382892B1571480070ECB8 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 445382882B1571480070ECB8 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4429AEA32AE74D4B00CA6286 /* Project object */;
 }

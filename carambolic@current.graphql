@@ -1,0 +1,61 @@
+query GetAllBookmarks {
+	bookmarks {
+		id
+		thumbnail
+		url
+		title
+		summary
+		isTrue
+		createdAt
+		updatedAt
+	}
+}
+
+query GetAllStories {
+  stories {
+		id
+		title
+		bookmark {
+			id
+			thumbnail
+			url
+			title
+			summary
+			isTrue
+			createdAt
+			updatedAt
+		}
+		acts {
+			id
+			image
+			title
+			body
+		}
+	}
+}
+
+mutation StoryCreate($input: StoryCreateInput!) {
+  storyCreate(input: $input) {
+    story {
+			id
+			title
+			bookmark {
+				id
+				thumbnail
+				url
+				title
+				summary
+				isTrue
+				createdAt
+				updatedAt
+			}
+			acts {
+				id
+				image
+				title
+				body
+			}
+		}
+  }
+}
+

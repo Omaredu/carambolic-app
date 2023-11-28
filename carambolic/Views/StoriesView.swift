@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StoriesView: View {
+    @ObservedObject var service: StoriesService = StoriesService()
     @State private var search: String = ""
     @State private var selectedStory: Story?
     @State private var cardOffset: CGSize = .zero
@@ -21,7 +22,7 @@ struct StoriesView: View {
     
     var body: some View {
         NavigationStack {
-            List(stories) { story in
+            List(service.stories) { story in
                 StoryItemView(story: story, namespace: animationNamespace)
                     .onTapGesture {
                         withAnimation(.spring(duration: 0.4)) {
@@ -32,6 +33,9 @@ struct StoriesView: View {
             .listStyle(.plain)
             .navigationTitle("My Stories")
             .searchable(text: $search, prompt: "Search...")
+        }
+        .onAppear() {
+            service.listStories()
         }
         .overlay {
             if let selectedStory = self.selectedStory {
